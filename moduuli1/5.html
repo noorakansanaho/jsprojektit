@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 5</title>
+</head>
+<body>
+<p id="target"></p>
+<script defer>
+    'use strict';
+    let year;
+    year = parseInt(prompt('Insert a year'));
+    if (year %4===0 && year %100!==0 || year %100===0 && year %400===0) {
+      document.querySelector('#target').innerHTML = 'The year '+year+' is a leap year';
+    }
+    else {
+      document.querySelector('#target').innerHTML = 'The year '+year+' is not a leap year';
+    }
+</script>
+</body>
+</html>
