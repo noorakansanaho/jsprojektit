@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 3</title>
+</head>
+<body>
+<p id="target"></p>
+<script defer>
+    'use strict';
+    let n1, n2, n3;
+    n1 = parseInt(prompt('Insert first number'));
+    n2 = parseInt(prompt('Insert second number'));
+    n3 = parseInt(prompt('Insert third number'));
+    document.querySelector('#target').innerHTML = `sum: ${n1+n2+n3}, product: ${n1*n2*n3}, average: ${(n1+n2+n3)/3}`;
+</script>
+</body>
+</html>
