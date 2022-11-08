@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 8</title>
+</head>
+<body>
+<p id="target"></p>
+<script defer>
+    'use strict';
+    let start, end;
+    let list = '<ul>';
+    start = parseInt(prompt('Insert start year'));
+    end = parseInt(prompt('Insert end year'));
+    for (let i = start; i < end; i++) {
+      if (i %4===0 && i %100!==0 || i %100===0 && i %400===0) {
+        list += '<li>'+i+'</li>';
+    }
+    }
+    document.querySelector('#target').innerHTML = list;
+</script>
+</body>
+</html>
