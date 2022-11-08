@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 7</title>
+</head>
+<body>
+<p id="target"></p>
+<script defer>
+    'use strict';
+    let amount, number, final;
+    amount = parseInt(prompt('How many dice do you want to roll?'));
+    final = 0;
+    for (let i = 0; i < amount; i++) {
+      number = Math.floor(Math.random()*6)+1;
+      final += number;
+    }
+    document.querySelector('#target').innerHTML = 'The sum of the dice you rolled is '+final;
+</script>
+</body>
+</html>
