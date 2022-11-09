@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 1</title>
+</head>
+<body>
+<p id="target"></p>
+<script defer>
+    'use strict';
+    let number;
+    const numbers = [];
+    for (let i = 0; i<5; i++){
+      number = parseFloat(prompt('Insert a number'));
+      numbers.push(number);
+    }
+    for (let i = 4; i>=0; i--) {
+      console.log(numbers[i]);
+    }
+</script>
+</body>
+</html>
