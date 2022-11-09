@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 2</title>
+</head>
+<body>
+<p id="target"></p>
+<script>
+    'use strict';
+    let list = '<ol>';
+    const number = parseInt(prompt('How many participants will there be?'));
+    for (let i = 0; i<number; i++){
+      name = prompt('Insert the name of the participant');
+      list += '<li>'+name+'</li>';
+    }
+    document.querySelector('#target').innerHTML = list;
+</script>
+</body>
+</html>
