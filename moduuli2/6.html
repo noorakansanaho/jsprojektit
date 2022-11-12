@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 6</title>
+</head>
+<body>
+<p id="target"></p>
+<script>
+    'use strict';
+    function dice() {
+      return Math.floor(Math.random()*6)+1;
+    }
+    let roll = null;
+    let lista = '<ul>';
+    while (roll !== 6) {
+      roll = dice();
+      lista += '<li>'+roll+'</li>';
+    }
+    document.querySelector('#target').innerHTML = lista;
+</script>
+</body>
+</html>
