@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 5</title>
+</head>
+<body>
+<p id="target"></p>
+<script>
+    'use strict';
+    const numbers = [];
+    let number = parseFloat(prompt('Input any number'));
+    do {
+      numbers.push(number);
+      number = parseFloat(prompt('Input any number'));
+    }
+    while (numbers.includes(number) === false);
+
+    numbers.sort((a,b) => a-b);
+    for(number of numbers){
+      console.log(number);
+    }
+</script>
+</body>
+</html>
