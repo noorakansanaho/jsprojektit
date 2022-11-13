@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 10</title>
+</head>
+<body>
+<script>
+  'use strict';
+  const candidates = [];
+  let howmany = parseInt(prompt('How many candidates?'));
+
+  for (let i = 0; i < howmany; i++) {
+    let cname = prompt(`Name for candidate ${i+1}`);
+    candidates.push({name: cname, votes: 0});
+  }
+  let howmanyv = parseInt(prompt('How many voters?'));
+
+  for (let i = 0; i < howmanyv; i++) {
+    let vote = prompt(`Who will voter ${i+1} vote for?`);
+    for (let candidate of candidates) {
+      if (vote === candidate.name){
+        candidate.votes += 1;
+      }
+    }
+  }
+
+  candidates.sort((a, b) => {
+    return b.votes - a.votes;
+  });
+
+  console.log(`The winner is ${candidates[0].name} with ${candidates[0].votes} votes`)
+  console.log('results:')
+  candidates.forEach((e) => {
+    console.log(`${e.name}: ${e.votes} votes`);
+  });
+</script>
+
+</body>
+</html>
