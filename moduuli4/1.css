@@ -1,0 +1,42 @@
+html {
+    font-family: 'Noto Sans Display', sans-serif;
+    width: 50%;
+    margin: auto;
+    background-color: #e5e5fa;
+    text-align: center;
+    color: #5a5a7a;
+}
+
+body {
+    padding-bottom: 5rem;
+}
+
+h1 {
+    font-size: 70px;
+    margin-bottom: 1rem;
+    background-color: #5a5a7a;
+    color: #d6d6f1;
+}
+
+input:hover {
+    background-color: #c4c4da;
+}
+
+input {
+    border-radius: 1rem;
+    border: 0.1rem solid #5a5a7a;
+    background: #f2f2fa;
+    color: #393956;
+    height: 1.5rem;
+}
+
+h2 {
+    padding-top: 2rem;
+}
+
+img {
+    display: block;
+    padding-top: 0.5rem;
+    align-content: center;
+    margin: auto;
+}
